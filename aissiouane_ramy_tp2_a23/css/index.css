@@ -1,0 +1,247 @@
+/* Styles spécifiques à chaque section et élément du site */
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+    min-width: 1200px;
+    height: 100vh;
+    width: 100vw;
+    /* Autres styles globaux */
+    background-image: url(../images/pexels-toa-heftiba-şinca-1194420.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+header {
+    /* Styles pour l'entête */
+    height: 180PX;
+    width: 100vw;
+    background-color: rgba(116, 116, 116);
+    color: black;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    max-height: 120px;
+
+}
+header img{
+    height: 200px;
+    margin-top: -40px;
+}
+
+header #recherche{
+    margin-top: 50px;
+    margin-right: 20vw;
+}
+header #hamburger img{
+    margin-top: 10px;
+    margin-right: 20px;
+    max-height: 100px;
+}
+header #hamburger img:hover{
+    transform: rotate(90deg);
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    list-style: none;
+    background-color: #f2f2f2;
+    margin-top: -10px;
+}
+header .menu ul{
+    display: flex;
+    flex-direction: column;
+}
+
+header #hamburger img:hover + .menu {
+    display: block;
+}
+header #hamburger .menu:hover{
+    display: block;
+}
+
+nav {
+    /* Styles pour le menu */
+    margin: auto;
+    
+    
+}
+
+main{
+    /* Styles pour le contenu principal */
+    height: 200px;
+    margin: auto;
+    width: 80%;
+}
+
+#accueil{
+    /* Styles pour la section Accueil avec flexbox */
+    height: 200px;
+    background-color: rgba(100, 148, 237, 0.534);
+    margin: auto;
+    width: 80%;
+
+    margin-top: 100px;
+}
+#accueil #prese{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+
+#inscription {
+    /* Styles pour la section Inscription (Formulaire) */
+    height: 250px;
+    background-color: rgba(100, 148, 237, 0.534);
+    margin: auto;
+    width: 80%;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+    margin-top: 20px;
+}
+
+#tableau {
+    /* Styles pour la section Tableau (Données tabulaires) */
+    height: 350px;
+    background-color: rgba(100, 148, 237, 0.534);
+    margin: auto;
+    width: 80%;
+    display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+#tableau, table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+#tableau, th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+#tableau, caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#articles {
+    /* Styles pour la section Articles avec flexbox */
+    height: 200px;
+    background-color: rgba(100, 148, 237, 0.534);
+    margin: auto;
+    width: 80%;
+}
+#articles, body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#articles, h1 {
+    text-align: center;
+}
+
+#articles, .main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#articles, .article {
+    flex: 0 0 48%;
+    margin-bottom: 20px;
+}
+
+#articles, img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+#galerie {
+    /* Styles pour la section Galerie avec flexbox */
+    height: 200px;
+    background-color: rgba(100, 148, 237, 0.534);
+    margin: auto;
+    width: 80%;
+}
+
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10%;
+    height: 10%;
+    margin: 20px;
+}
+.slides img{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.slide {
+    width: 50%;
+    height: 100%;
+    margin: 0 10px;
+}
+
+
+footer {
+    /* Styles pour le pied de page */
+    height: 220px;
+    width: 100vw;
+    background-color: darkorange;
+    margin: auto;
+    position: absolute;
+    top: 250vw;
+    right: 0;
+    font-size: 10px;
+}
+footer {
+    padding: 20px 0;
+    color: #333;
+}
+footer #row{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.container {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4CAF50;
+}
+
+p {
+    margin-bottom: 10px;
+}
